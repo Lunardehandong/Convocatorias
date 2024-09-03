@@ -1,0 +1,1377 @@
+@font-face {
+    font-family: 'Nexa-ExtraLight.ttf'; 
+    src: url('public/Nexa-ExtraLight'); /* Ruta a tu archivo de fuente */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nexa-ExtraLight', sans-serif;
+    background-color: #D5D5D5;
+}
+
+/* Encabezado superior */
+.social-bar {
+    background:  #0B6FB6;
+    display: flex;
+    justify-content: center; /* Centra los elementos a lo largo de la barra */
+    align-items: center;
+    height: 32px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2; /* Asegura que la barra social esté por encima de otros elementos */
+}
+
+.social-icon-container {
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos se alineen en una fila */
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 31px;
+    height: 30.81px;
+    fill: black;
+}
+
+.social-text {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+
+
+.navigation-menu {
+    background:  #0B6FB6;
+    height: 50px;
+    display: flex;
+    justify-content: center; /* Centra los elementos a lo largo de la barra */
+    align-items: center; /* Alinea los elementos verticalmente */
+    margin-top: 50px; /* Ajuste del espacio entre la barra social y el menú de navegación */
+}
+
+.logo-text-container {
+    display: flex;
+    align-items: center;
+    margin-right: 150px;
+    margin-left: 125px;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+    margin-top: -3px; /* Mueve el logo 10px hacia arriba */
+}
+
+.logo-text {
+    height: 38px;
+    color: black;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.menu-links {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    margin-left: -50px;
+}
+
+.menu-link {
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+}
+.no-underline {
+    text-decoration: none;
+  }
+  
+.cart-icon {
+    width: 43px;
+    height: 42px;
+    margin-top: -3px; /* Mueve el logo 10px hacia arriba */
+}
+
+.login-container {
+    height: 20px;
+    padding: 8px;
+    background: black;
+    display: flex;
+    align-items: center;
+    margin-left: -0px;
+    margin-right: 150px;
+}
+
+.login-icon {
+    width: 43px;
+    height: 42px;
+    margin-left: 0px;
+}
+
+/* Contenido principal */
+.main-content {
+    width: 100%;
+    min-width: 1440px;
+    position: absolute;
+    top: 100px;
+    background: #D5D5D5;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+
+.title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-right: 150px;
+    margin-left: 115px;
+}
+
+.horizontal-separator {
+    width: 70%;
+    height: 2px;
+    position: absolute;
+    left: 44.5%;
+    top: 70px;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+.empty-cart-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.empty-cart-container img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+    right: 100px;
+    left: -50px;
+    top: -80px;
+    margin-bottom: 20px;
+}
+
+.empty-cart-container p {
+    font-size: 24px;
+    font-weight: 400;
+    color: #333;
+    position: relative;
+    right: 100px;
+    left: -50px;
+    top: -70px;
+}
+
+.payment-code-container {
+    margin-top: -85px;
+    margin-left: -100px;
+    text-align: center;
+}
+
+.code-label {
+    color: #1A1A1A;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.code-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.code-input input {
+    width: 200px;
+    padding: 10px;
+    background: white;
+    border-radius: 4px;
+    border: 1px #949494 solid;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.invalid-code-message {
+    color: #595959;
+    font-size: 11px;
+    font-weight: 400;
+    margin-top: 8px;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    margin-left: -100px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Pie de página */
+.footer {
+    width: 100%;
+    min-width: 1440px;
+    height: 452px;
+    left: 0px;
+    top: 700px;
+    position: relative;
+    background: #0B6FB6;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.footer-links {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 46px;
+    display: inline-flex;
+    
+}
+
+.footer-section-service {
+    width: 170px;
+    height: 300px;
+   margin: 50px;
+}
+/* Titulos*/
+.footer-section-service-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 120px;
+    height: 38px;
+    left: 140px;
+    top: 10%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+}
+.footer-service-text {
+    color: black;
+    font-size: 24px;
+    font-weight: 700;
+}
+/*Contenido servicios*/
+.footer-section-service-content {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    height: 38px;
+    left: 140px;
+    top: 20%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+}
+.footer-section-service-content-text {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+/*Contenido tutor*/
+.footer-section-tutor-content {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    height: 38px;
+    left: 370px;
+    top: 20%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+}
+.footer-section-tutor-content-text {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+/*Contenido blog*/
+.footer-section-blog-content {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    height: 38px;
+    left: 590px;
+    top: 20%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+}
+.footer-section-blog-content-text {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+/*Contenido legal*/
+.footer-section-legal-content {
+    display: flex;
+    flex-direction: column;
+    
+    gap: 20px;
+    height: 38px;
+    left: 765px;
+    top: 20%;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 400;
+}
+.footer-section-legal-content-text {
+    color: black;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+
+.footer-social-bar {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: row; /* Asegura que los elementos se alineen en una fila */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.social-separator {
+    width: 0px;
+    height: 290.50px;
+    left: 120%;
+    top: 5px;
+    position: absolute;
+    
+    border: 5px black solid;
+}
+
+.footer-social-icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    position: absolute;
+    top: 10%; /* Ajusta este valor para mover arriba o abajo */
+    left: 150%; /* Ajusta este valor para mover a la izquierda o derecha */
+    right: 100%;
+}
+
+.footer-social-icon {
+    width: 32px;
+    height: 32px;
+    fill: black;
+    margin-bottom: 30px; /* Aumenta este valor para aumentar la separación vertical */
+}
+
+.footer-social-text {
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 30px; /* Aumenta este valor para aumentar la separación vertical */
+}
+.footer-social-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-horizontal-separator {
+    width: 70%;
+    height: 10px;
+    position: absolute;
+    left: 44.5%;
+    top: 380px;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+/* Texto de derechos de autor */
+.copyright-text {
+    position: absolute;
+    left: 50%; /* Centrado horizontalmente */
+    top: 400px; /* Posición ajustada para estar debajo del separador */
+    transform: translateX(-50%); /* Centrado horizontalmente */
+    text-align: center;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+/* Inicio CARRITO LLENO PAGE */
+
+/* Estilos para la información del curso */
+.course-info-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.course-info {
+    width: 574px;
+    height: 189px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+    display: inline-flex;
+    right: 44%;
+}
+
+.course-description {
+    width: 576px;
+    height: 131px;
+    left: -95px;
+    top: 68.50px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.course-title {
+    width: 467px;
+    height: 56px;
+    left: -95px;
+    top: 0px;
+    position: absolute;
+    color: black;
+    font-size: 36px;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+/* Estilos para el botón "Eliminar" */
+.delete-button {
+    
+    height: 30px;
+    left: 700px;
+    top: 18px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+/* Estilos para la tarjeta de confirmación de eliminación */
+.confirmation-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #D5D5D5;
+    border: 5px rgb(0, 0, 0) solid;
+    justify-content: center;
+    align-items: center;
+    gap: 82px; 
+    display: inline-flex;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    width: 500px; 
+    height: 200px; 
+}
+.delete-button-container {
+    width: 145px;
+    height: 48.32px;
+    position: relative;
+}
+/* Borde del botón */
+.delete-button-border {
+    width: 134.64px;
+    height: 37.96px;
+    position: absolute;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    border: 3px white solid;
+    border-radius: 20px; 
+}
+/* Fondo del botón */
+.delete-button-background {
+    width: 100%;
+    height: 100%;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: #F18C21;
+    border-radius: 20px; 
+}
+.delete-button-text {
+    height: 30px;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+/* Estilos para el botón "Regresar" */
+.return-button-container {
+    width: 145px;
+    height: 48.32px;
+    position: relative;
+}
+/* Borde del botón */
+.return-button-border {
+    width: 134.64px;
+    height: 37.96px;
+    position: absolute;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    border: 3px white solid;
+    border-radius: 20px; 
+}
+/* Fondo del botón */
+.return-button-background {
+    width: 100%;
+    height: 100%;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: #0B6FB6;
+    border-radius: 20px; 
+}
+.return-button-text {
+    height: 30px;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-weight: 900;
+    word-wrap: break-word;
+    cursor: pointer;
+    
+   
+}
+
+
+.confirmation-message {
+    width: 576px; 
+    height: 131px; 
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    position: absolute; 
+    top: 65%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); 
+}
+
+.confirmation-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+/* Estilos para el contenedor de precios */
+.price-container {
+    width: 20%;
+    height: 180%;
+    position: absolute;
+    right: 20.5%;
+    padding-right: 17px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #B8C5D0;
+    border: 1px #B8C5D0 solid;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    display: inline-flex;
+}
+
+/* Estilos para la información de precios */
+.price-info {
+    width: 275px;
+    height: 120px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.price-background {
+    width: 296px;
+    height: 120px;
+    position: relative;
+}
+
+.total-price {
+    width: 214px;
+    height: 44px;
+    left: 15px;
+    top: 38px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+.total-text {
+    left: 25px;
+    top: 13px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+.division1 {
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    top: 60px;
+    transform: translateX(-50%);
+    background-color: black;
+}
+.division2 {
+    width: 80%;
+    height: 3px;
+    position: absolute;
+    left: 50%;
+    top: 150px;
+    transform: translateX(-50%);
+    background-color: black;
+}
+
+
+
+
+/* Estilos para el botón de pago */
+.payment-button {
+    width: 170px;
+    height: 12px;
+    position: relative;
+    left: 10px;
+    bottom: 50px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    background: #0B6FB6;
+    border: 1px black solid;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+.payment-only-text {
+    
+    height: 12px;
+    position: relative;
+    left: 10px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: -50px;
+    top: 200;
+    justify-content: space-between;
+    align-items: center;
+    display: inline-flex;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+/*FIN CARRITO LLENO PAGE */
+
+/*BOTON PAYPAL*/
+/* Estilos para el contenedor del método de pago */
+.payment-method-container {
+    width: 50%;
+    
+}
+
+/* Estilos para el contenido del método de pago */
+.payment-method-content {
+    text-align: right;
+    margin-top: 100px;
+    margin-left: 200px;
+   
+    
+}
+
+/* Estilos para el contenedor del botón de PayPal */
+.payment-method-button-container {
+    text-align: center;
+    z-index: 0;
+}
+
+/* cofirmacion pago*/
+/* Estilos para la tarjeta de confirmación de eliminación */
+.confirmation-card {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #D5D5D5;
+    border: 5px rgb(0, 0, 0) solid;
+    justify-content: center;
+    align-items: center;
+    gap: 82px; 
+    display: inline-flex;
+    padding: 20px;
+    text-align: center;
+    z-index: 9999;
+    width: 500px; 
+    height: 200px; 
+}
+
+/* Estilos para el botón "Regresar" */
+.return-button-container-pago {
+    width: 145px;
+    height: 48.32px;
+    position: relative;
+}
+/* Borde del botón */
+.return-button-border-pago {
+    width: 134.64px;
+    height: 37.96px;
+    position: absolute;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    border: 3px white solid;
+    border-radius: 20px; 
+}
+/* Fondo del botón */
+.return-button-background-pago {
+    width: 100%;
+    height: 100%;
+    left: 80px;
+    top: 180px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    background: #0B6FB6;
+    border-radius: 20px; 
+}
+.return-button-text-pago {
+    height: 30px;
+    left: 80px;
+    top: 175px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 13px;
+    font-weight:900;
+    word-wrap: break-word;
+    cursor: pointer;
+    
+   
+}
+
+
+.confirmation-message-pago {
+    width: 576px; 
+    height: 131px; 
+    color: black;
+    font-size: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-bottom: 20px;
+    position: absolute; 
+    top: 65%; /* Centrado verticalmente */
+    left: 50%; /* Centrado horizontalmente */
+    transform: translate(-50%, -50%); 
+}
+
+.confirmation-buttons-pago {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end; 
+    align-items: center; 
+}
+/*BLOG */
+.blog-page-title {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+/*carrusel*/
+
+.carousel-container {
+    width: 850px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden; /* Oculta el contenido que excede el tamaño del contenedor */
+    
+}
+
+/* Estilos de los slides del carrusel */
+.carousel-slide {
+    width: 850px;
+    height: 250px;
+    display: flex; /* Hace que los elementos internos se comporten como una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    transition: transform 0.5s ease; /* Efecto de transición suave al cambiar de slide */
+}
+
+/* Estilos de cada slide individual */
+.slide {
+    width: 850px;
+    height: 250px;
+}
+
+/* Estilos para los botones de navegación del carrusel */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+.carousel-control-left {
+    left: 0;
+}
+
+.carousel-control-right {
+    right: 0;
+}
+
+/* Estilos para los controles del carrusel */
+.carousel-controls {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+/* Estilos para los indicadores del carrusel */
+.carousel-indicator {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo para el indicador activo */
+.carousel-indicator.active {
+    background-color: rgb(0, 0, 0);
+}
+
+/*Entrada de blogs*/
+.blog-container {
+    width: 746.44px; 
+    height: auto;
+    margin-left: 5%;
+    background: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25%; 
+    margin-bottom:-135%;
+}
+
+.blog-entry {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin: 1px; 
+    background: #A6A6A6; 
+    padding: 20px; 
+    border-radius: 10px;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    background: #A6A6A6;
+    border: 2px solid black;
+    margin-left: 20px;
+    
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.blog-content {
+    margin-left: 20px;
+    width: 576.44px;
+    padding-bottom: 20px;
+}
+
+.blog-title {
+    font-size: 36px;
+    font-weight: 900;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.blog-description {
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.read-more {
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    transition: border-color 0.3s ease;
+    
+}
+
+.read-more:hover {
+    border-color: #0B6FB6;
+}
+
+
+
+/*Barra lateral*/
+/* Estilos de la barra lateral */
+.sidebar {
+    width: 250px;
+    margin-left: auto;
+    margin-right: 100px;
+    background: #A6A6A6;
+    margin-top: 35%;
+    margin-bottom:-30%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sidebar-title {
+    font-size: 24px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.popular-entry {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin: 10px; 
+    background: #D5D5D5; 
+    padding: 10px; 
+    border-radius: 10px;
+}
+
+.popular-image {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0; 
+    flex-grow: 0; 
+}
+
+.popular-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.popular-content {
+    flex-grow: 1;
+}
+
+.popular-title {
+    font-size: 20px;
+    font-weight: 900;
+    color: black;
+    margin-bottom: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    
+}
+/*CATEGORIAS*/
+.category-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+   
+}
+.category-title {
+    
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    word-wrap: break-word;
+    
+}
+
+.category-item {
+    
+    width: 250px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: underline;
+    word-wrap: break-word;
+    margin-top: 5%;
+    
+}
+
+/**/
+.course-container {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #D5D5D5;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+.course-conteiner-title {
+    color: black;
+    font-size: 20px;
+    font-weight: 900;
+    word-wrap: break-word;
+    
+}
+
+.course-reminder {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.course-image {
+    width: 230px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.course-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*posicion barra lateral entrada de blog*/
+
+.sidebar-entrada {
+    width: 250px;
+    margin-left: auto;
+    margin-right: 100px;
+    background: #A6A6A6;
+    margin-top: 22%;
+    margin-bottom:-30%;
+    padding: 20px;
+    border-radius: 10px;
+}
+/*ENTRADA BLOG*/
+.blog-entrada-container {
+    width: 746.44px; 
+    height: auto;
+    margin-left: 5%;
+    background: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 3%; 
+    margin-bottom:-135%;
+}
+.title-entrada-blog {
+    width: 651px;
+    
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+.container-intro-blog {
+    display: flex;
+    align-items: start;
+  }
+  
+  .container-intro-blog img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+  
+  .container-intro-blog .text {
+    width: 518px;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  /*Contenido blog*/
+  .content-blog {
+    width: 808px;
+    margin-bottom:20%;
+  }
+  
+  .content-blog-title {
+    width: 467px;
+    height: 56px;
+    color: black;
+    font-size: 36px;
+
+    font-weight: 900;
+    word-wrap: break-word;
+  }
+  
+  .content-blog-text {
+    color: black;
+    font-size: 20px;
+    
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .content-blog-text p {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .content-blog-text p::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .page-section {
+    padding: 6rem 0;
+  }
+  .page-section .page-section-heading {
+    font-size: 2.25rem;
+    line-height: 2rem;
+  }
+  @media (min-width: 992px) {
+    .page-section .page-section-heading {
+      font-size: 3rem;
+      line-height: 2.5rem;
+    }
+  }
+
+  * Estilos para la Convocatoria */
+.convocatoria-section {
+    padding: 4rem 0;
+    text-align: center; /* Centra el contenido */
+    margin-top: 30px; /* Agrega un margen superior para separarla del banner */
+  
+  }
+  
+  .convocatoria-heading,
+  .convocatoria-subheading {
+    color: #fff !important; /* Cambio el color de texto a blanco */
+  }
+  
+  .convocatoria-heading {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .convocatoria-subheading {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+  }
+  
+  .convocatoria-image {
+    max-width: 70%; /* Ajusta el ancho de la imagen según tus necesidades */
+    height: auto;
+    margin-top: 40px; /* Aumento el margen superior para separar más la imagen del texto */
+    display: block; /* Para centrar la imagen */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .convocatoria-button {
+    margin-top: 30px;
+  }
+  
+/*PAGINA LEGAL*/
+
+.legal-page-title {
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-weight: 900;
+    word-wrap: break-word;
+}
+
+.legal-entrada-container {
+    width: 746.44px; 
+    height: auto;
+    margin-left: 5%;
+    background: #D5D5D5;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 3%; 
+    margin-bottom:-50%;
+}
+  /*Contenido pagina legal*/
+  .content-legal {
+    width: 808px;
+   
+  }
+  
+  .content-legal-title {
+    width: 467px;
+    height: 56px;
+    color: black;
+    font-size: 36px;
+    font-weight: 900;
+    word-wrap: break-word;
+    scroll-margin-top: 200px; 
+  }
+  .content-legal-subtitle {
+    width: 467px;
+    height: 56px;
+    color: black;
+    font-size: 27px;
+    margin-top: 2%;
+    font-weight: 900;
+    word-wrap: break-word;
+  }
+  .content-legal-text {
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+
+  .content-legal-text p {
+    position: relative;
+    padding-left: 30px;
+  }
+  
+  .content-legal-text p::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+  }
+
+  .div-legal {
+    width: 800px;
+    height: 0px;
+    border: 2px solid black;
+    margin-top: 2%;
+}
+
+
+/*Barra lateral de la pagina LEGAL*/
+.sidebar-legal {
+    width: 250px;
+    background: #A6A6A6;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 0%; 
+    right: 0;
+    overflow-y: auto;
+    margin-left: auto;
+    margin-right: 50px;
+    margin-top: 10%;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+.sidebar-title-legal {
+    font-size: 24px;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 20px;
+    text-align: center;
+    text-decoration: none; 
+    width: 100%; 
+    display: block; 
+}
